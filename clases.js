@@ -19,3 +19,29 @@ let persona2 = new Persona ('laura','contreras');
 console.log(persona2.nombre);
 persona1.nombre="camilo enrique";//set nombre ("camilo enrique")
 console.log(persona1.nombre);//get nombre()
+
+/*static*/
+
+class Persona3{
+    static contadorPersona =0;
+    static get MAX_OBJ(){
+        return 5;
+
+    }
+    static saludar(){
+        console.log('saludes desde el metodo estatico');
+    }
+    static saludar2(persona){
+        console.log(persona.nombre);
+    }
+
+} 
+let persona5 = new Persona3 ()
+let persona = new Persona3()
+/*Persona3.saludar();*/
+console.log(Persona3.saludar())
+
+
+
+
+
